@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/antra
+    username: sankethbolishetti
+    password:
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        default_schema: employee
+    open-in-view: false
+
+  flyway:
+    enabled: true
+    locations: classpath:/db/migration
+    schemas: employee
+    default-schema: employee
+    table: flyway_schema_history_employees
+    create-schemas: true
+    baseline-on-migrate: true
+    baseline-version: 0
+    validate-migration-naming: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
