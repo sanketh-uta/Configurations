@@ -29,4 +29,5 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka
 
-name: Sanketh-prod
+info:
+  name: Sanketh-prod
