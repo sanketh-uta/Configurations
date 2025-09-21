@@ -12,6 +12,7 @@ spring:
       hibernate:
         default_schema: employee
     open-in-view: false
+    show-sql: true
 
   flyway:
     enabled: true
