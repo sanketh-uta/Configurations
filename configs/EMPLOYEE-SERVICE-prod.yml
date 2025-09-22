@@ -1,7 +1,7 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/antra
-    username: sankethbolishetti
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: 
     password:
     driver-class-name: org.postgresql.Driver
 
